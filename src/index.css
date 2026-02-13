@@ -1,0 +1,86 @@
+/* VisionCord - Discord-accurate theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Discord palette */
+  --bg-primary: #313338;
+  --bg-secondary: #2b2d31;
+  --bg-secondary-alt: #232428;
+  --bg-tertiary: #1e1f22;
+  --bg-server-list: #1e1f22;
+  --bg-input: #383a40;
+  --bg-modifier-hover: rgba(79, 84, 92, 0.16);
+  --bg-modifier-active: rgba(79, 84, 92, 0.24);
+  --bg-modifier-selected: rgba(79, 84, 92, 0.32);
+  --text-normal: #dbdee1;
+  --text-muted: #b5bac1;
+  --text-link: #00a8fc;
+  --accent: #5865f2;
+  --accent-hover: #4752c4;
+  --accent-active: #3c45a5;
+  --border-subtle: rgba(4, 4, 5, 0.15);
+  --border-strong: rgba(4, 4, 5, 0.2);
+  --scrollbar-thin: #202225;
+  --scrollbar-thumb: #4e5058;
+  --status-online: #23a559;
+  --status-idle: #f0b232;
+  --status-dnd: #f23f43;
+  --status-offline: #80848e;
+  --font-primary: 'Inter', 'gg sans', 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--text-normal);
+  background: var(--bg-primary);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* Discord-style scrollbar - thin, only thumb visible */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5d6269;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #6d7076;
+  background-clip: padding-box;
+}
